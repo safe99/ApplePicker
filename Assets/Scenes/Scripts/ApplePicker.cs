@@ -31,4 +31,9 @@ public class ApplePicker : MonoBehaviour
     {
         
     }
+
+    public void AppleDestroyed()
+    {
+
+    }
 }
