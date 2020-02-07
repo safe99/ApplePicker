@@ -120,6 +120,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &165761789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1325160411590856264, guid: fe17d761b4d50684fbb28deace8c797a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4454382372975486767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &165761790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165761789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde3ce366dbb0d14da11e9e6796147af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 2697188757868705896, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
+    type: 3}
+  speed: 10
+  leftAndRightEdge: 30
+  chanceToChangeDirections: 0.1
+  secondsBetweenAppleDrops: 1
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +330,7 @@ GameObject:
   - component: {fileID: 1544415822}
   - component: {fileID: 1544415821}
   - component: {fileID: 1544415820}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +408,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4454382372975486767
 PrefabInstance:
@@ -455,72 +479,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe17d761b4d50684fbb28deace8c797a, type: 3}
---- !u!1001 &5636765765895448673
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2697188757868705896, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_Name
-      value: Apple
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4441018478781156190, guid: 0976d9ff6e9934542a5fc40e1e7d4653,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0976d9ff6e9934542a5fc40e1e7d4653, type: 3}
